@@ -66,7 +66,7 @@ class _WeatherPageState extends State<WeatherPage> {
       appBar: AppBar(
         title: const Text('Weather App'),
         centerTitle: false,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.white,
         actions: [
           IconButton(
             icon: const Icon(Icons.clear),
@@ -122,12 +122,10 @@ class _WeatherPageState extends State<WeatherPage> {
                   // radius: 15,
                 )),
               ),
-            if (weatherData != null)
-              WeatherDataWidget(weatherData: weatherData)
+            if (weatherData != null) WeatherDataWidget(weatherData: weatherData)
           ],
         ),
       )),
     );
   }
 }
-
